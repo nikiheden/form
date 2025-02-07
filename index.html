@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Liter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Volunteer Sign Up</title>
@@ -11,27 +14,28 @@
     <main class="background">
         <form class="form">
             <h1>Volunteer Application</h1>
-            <h2>Fill out this form and we will get back to you asap!</h2>
+            <h2>Fill out this form to join the team!</h2>
             
-            <label for="fullname">Full Name</label>
-            <input type="text" name="fullname" id="fullname" required>
+            <label for="fullname" class="label">Full Name</label>
+            <input type="text" class="input" name="fullname" id="fullname" placeholder="your name" required>
 
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email">
+            <label for="email" class="label">Email Address</label>
+            <input type="email" class="input" name="email" id="email" placeholder="your email" required>
 
             <div class="select-wrapper">
-                <label for="select">What would you prefer to help with?</label>
-                <select name="help" id="select">
+                <label for="select" class="label">What would you prefer to help with?</label>
+                <select name="help" class="select" id="select">
                     <option value="entrance">Entrance</option>
                     <option value="cooking">Cooking</option>
-                    <option value="rigg">Rigg & Build</option>
+                    <option value="rig">Rig & Build</option>
                     <option value="sanitary">Trash Patrole</option>
                     <option value="open">Anything goes!</option>
                 </select>
             </div>
         
-            <label for="message">Anything else? Allergies, Questions, etc.</label>
-            <input type="text" name="message" id="message">
+            <label for="message" class="label">Anything else? Allergies, Questions, etc.</label>
+            <textarea class="message" name="message" id="message" rows="5"></textarea>
+            <button class="btn" type="submit">Lets go!</button>
         </form>
         <section class="img">
             <img class="scene" src="images/solkultscen.jpg" alt="festival scene" width="300px">

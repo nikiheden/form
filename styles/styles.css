@@ -1,8 +1,12 @@
+body {
+    background-image: url(/images/butterfly.jpg);
+}
+
 .background {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(180, 224, 180);
+    background-image: url(../images/butterfly.jpg);    
     height: 100vh;
 }
 
@@ -11,7 +15,7 @@
     flex-direction: column;
     width: 340px;
     height: 60%;
-    background-color:aquamarine;
+    background-color:rgba(11, 90, 18, 0.84);
     border-radius: 6px 0 0 6px;
     
 
@@ -33,4 +37,91 @@
     left: 8%;
     top: 2%;
     transform:scale(1.1);
+}
+
+.label {
+    margin: 5px 15px 3px 15px;
+    font-family: "Liter", serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #cfa50d;
+    cursor: pointer;
+}
+
+input {
+    margin: 0 25px 10px 15px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #9e832383;
+}
+
+input::placeholder {
+    color: rgba(70, 3, 47, 0.44);
+}
+
+input:hover {
+    box-shadow: 0px 2px;
+}
+
+.message {
+    margin: 0 15px 10px 15px;
+    background-color: #ffe78f;
+    border-radius: 6px;
+}
+
+.message:hover {
+    box-shadow: 0px 2px;
+    background-color: #fbebb3;
+}
+
+.select {
+    margin: 3px 0 0 15px;
+    font-family: "Liter", serif;
+    font-size: 14px;
+    background-color: #ffe78f;
+    border-radius: 6px;
+    color: rgb(70, 3, 47);
+}
+
+.select:hover {
+    box-shadow: 0px 2px;
+    background-color: #fbebb3;
+}
+
+
+h1 {
+    font-family: "Atma", serif;
+    font-size: 33px;
+    font-weight: 600;
+    color: #fbb70e;
+    text-align: center;
+    text-shadow: -2px 2px 6px;
+}
+
+h2 {
+    font-family: "Liter", serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #cfa50d;
+    text-align: center;
+    margin: 5px 0 25px 0;
+}
+
+.btn {
+    width: 85px;
+    height: 50px;
+    margin: 0 0 10px 15px;
+    background-color: #f9d13f;
+    border-radius: 50px;
+    border: 1px solid rgb(131, 97, 5);
+    font-family: "Atma", serif;
+    font-weight: 600;
+    color: rgb(70, 3, 47);
+    box-shadow: -5px 5px 5px;
+}
+
+.btn:hover {
+    background-color: #f29040;
+    color: rgb(67, 51, 4);
+    cursor: pointer;
 }
