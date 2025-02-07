@@ -1,0 +1,36 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 224, 180);
+    height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 60%;
+    background-color:aquamarine;
+    border-radius: 6px 0 0 6px;
+    
+
+}
+
+.img {
+    position: relative;
+    height: 60%;
+}
+
+.scene {
+    height: 100%;
+    border-radius: 0 6px 6px 0;
+
+}
+
+.logo {
+    position: absolute;
+    left: 8%;
+    top: 2%;
+    transform:scale(1.1);
+}
